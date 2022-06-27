@@ -1,0 +1,14 @@
+#formbox{
+  display: flex;
+  flex-direction: column;
+  width : 50vw;
+  background: bisque;
+  padding: 3vw;
+
+};
+#fetchBtn{
+  width: 10vw
+}
+#fetchHeroko{
+  width:15vw
+}

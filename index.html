@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="printLine"></div>
-  <button onclick="printModulu()">click me</button>
-<button onclick="clickTOFindNum()">click to find num</button>
-<button id="fetchBtn" onclick="getFromFetch()">click to fetch</button>
-<div id="herokuDiv">
-  <button id="fetchHeroko" onclick="getFetchFRomHeroku()">fetch from heroku</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="formbox">
+      <label for="movieName"> enter movie name : </label>
+      <input type="text" id="movieNAmeInput" placeholder="movie name">
+      
+      <label for="linkMovie">enter movie link :</label>
+      <input type="text" id="linkMovieInput" placeholder="movie link">
+      
+      <label for="movieImage">enter image: </label>
+      <input type="text" id="movieImageInput" placeholder="movie image">
+      
+      <label for="movieRate">rate the movie:</label>
+      <input type="text" id="movieRateInput" placeholder="movie rating">
+      
+      <label for="synposis"> enter movie synposis:</label>
+      <input type="text" id="movieSynpInput" placeholder="movie synposis">
+      <button id="fetchBtn" onclick="getFetchFRomHeroku()">click to fetch </button>
+      <br>
+      <button id="fetchHeroko" onclick="addMovieDetails()">click to add new movie</button>
+    </form>
+    <div id="movieInfo"></div>
 
-</div>
-  <script src="main.js"></script>
-</body>
+
+
+   
+    <script src="main.js"></script>
+  </body>
 </html>
